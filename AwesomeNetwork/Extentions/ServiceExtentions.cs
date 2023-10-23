@@ -1,10 +1,10 @@
-﻿using AwesomeNetwork.Data.Repository;
-using AwesomeNetwork.Data.UoW;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccessLayer.Data.Repository;
+using DataAccessLayer.Data.UoW;
 
 namespace AwesomeNetwork.Extentions
 {

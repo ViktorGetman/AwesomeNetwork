@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AwesomeNetwork.Configs;
-using AwesomeNetwork.Models.Users;
+﻿using DataAccessLayer.Configs;
+using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace AwesomeNetwork.Data
+namespace DataAccessLayer.Data
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {

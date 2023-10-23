@@ -1,11 +1,9 @@
-﻿using AwesomeNetwork.Data.Repository;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using DataAccessLayer.Data.Repository;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace AwesomeNetwork.Data.UoW
+namespace DataAccessLayer.Data.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {

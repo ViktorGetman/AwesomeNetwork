@@ -1,10 +1,7 @@
-﻿using AwesomeNetwork.Data.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
+using DataAccessLayer.Data.Repository;
 
-namespace AwesomeNetwork.Data.UoW
+namespace DataAccessLayer.Data.UoW
 {
     public interface IUnitOfWork: IDisposable
     {

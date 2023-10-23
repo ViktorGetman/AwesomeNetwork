@@ -1,10 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
-namespace AwesomeNetwork.Data.Repository
+namespace DataAccessLayer.Data.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -40,7 +38,7 @@ namespace AwesomeNetwork.Data.Repository
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            return Set;
+            return await Set.ToListAsync();
         }
 
         public async Task Update(T item)

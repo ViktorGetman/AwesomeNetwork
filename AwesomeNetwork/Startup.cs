@@ -8,16 +8,15 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using AwesomeNetwork.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using AwesomeNetwork.Models.Users;
-using AwesomeNetwork.Data.UoW;
-using AwesomeNetwork.Data.Repository;
 using AwesomeNetwork.Extentions;
 using Microsoft.Extensions.Logging;
 using AutoMapper;
+using DataAccessLayer.Data;
+using DataAccessLayer.Data.Repository;
+using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Http;
 
 namespace AwesomeNetwork
@@ -95,7 +94,7 @@ namespace AwesomeNetwork
 
             app.UseEndpoints(endpoints =>
             {
-                // определение маршрутов
+                // РѕРїСЂРµРґРµР»РµРЅРёРµ РјР°СЂС€СЂСѓС‚РѕРІ
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

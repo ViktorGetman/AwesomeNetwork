@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AwesomeNetwork.Data.Repository
+namespace DataAccessLayer.Data.Repository
 {
     public interface IRepository<T> where T : class
     {

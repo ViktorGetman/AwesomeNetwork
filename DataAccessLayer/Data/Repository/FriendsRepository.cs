@@ -1,12 +1,10 @@
-﻿using AwesomeNetwork.Models.Users;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccessLayer.Models;
+using Microsoft.EntityFrameworkCore;
 
-
-namespace AwesomeNetwork.Data.Repository
+namespace DataAccessLayer.Data.Repository
 {
     public class FriendsRepository : Repository<Friend>
     {
